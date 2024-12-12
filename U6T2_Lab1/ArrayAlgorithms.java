@@ -61,5 +61,54 @@ public class ArrayAlgorithms {
         return newStr;
     }
 
+    /**  This method checks each Person in the people array, and if they
+    *  are an adult (at least 18 years old), they introduce themselves
+    *  (i.e. by calling the introduce() method)
+    *
+    *  PRECONDITION: people.length > 0
+    */
+    public static void introduceAdults(Person[] people) {
+        // IMPLEMENT ME!
+        for (int i = 0; i < people.length; i++) {
+            if (people[i].getAge() >= 18) {
+                people[i].introduce();
+            }
+        }
+    }
 
+    /** Prints each String in wordList, on its own line, in reverse order;
+    *  the characters of each string are also reversed.
+    *
+    *  PRECONDITION: wordList.length > 0
+    */
+    public static void reversePrint(String[] wordList) {
+        // IMPLEMENT ME
+        for (int i = wordList.length - 1; i >= 0; i --) {
+            String current = wordList[i];
+            for (int j = current.length() - 1; j >= 0; j --) {
+                System.out.print(current.substring(j, j + 1));
+            }
+            System.out.println();
+        }
+    }
+
+    /** Returns a new array containing all elements from arr1 combined with 
+    *  all elements from arr2; arr1's elements should be followed by
+    *  arr2's elements
+    *
+    *  PRECONDITION: arr1.length > 0, arr2.length > 0
+    */
+    public static int[] combine(int[] arr1, int[] arr2) {
+        // IMPLEMENT ME
+        int [] newCombine = new int[arr1.length + arr2.length];
+        for (int i = 0; i < arr1.length - 1; i ++) {
+            newCombine[i] += arr1[i];
+        }
+        for (int j = arr1.length; j < arr1.length + arr2.length; j ++) {
+            newCombine[j] += arr2[j - arr1.length];
+        }
+        return newCombine;
+    }
 }
+
+
