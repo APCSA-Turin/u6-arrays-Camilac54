@@ -1,5 +1,3 @@
-/**package U6T2_Lab1;
-
 public class Person {
     private String name;
     private int age;
@@ -17,7 +15,11 @@ public class Person {
       return age;
     }
   
-    public void introduce() {
-        System.out.println("My name is " + name + " and I am " + age + " years old");
+    public void setName(String newName) {
+      name = newName;
     }
-}*/ 
+  
+    public void introduce() {
+      System.out.println("My name is " + name + " and I am " + age + " years old");
+    }
+  }  

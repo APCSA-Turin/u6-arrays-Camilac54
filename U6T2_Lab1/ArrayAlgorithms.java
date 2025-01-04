@@ -67,14 +67,14 @@ public class ArrayAlgorithms {
     *
     *  PRECONDITION: people.length > 0
     */
-    public static void introduceAdults(Person[] people) {
+    /**public static void introduceAdults(Person[] people) {
         // IMPLEMENT ME!
         for (int i = 0; i < people.length; i++) {
             if (people[i].getAge() >= 18) {
                 people[i].introduce();
             }
         }
-    }
+    }*/
 
     /** Prints each String in wordList, on its own line, in reverse order;
     *  the characters of each string are also reversed.
