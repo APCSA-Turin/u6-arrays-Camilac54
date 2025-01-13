@@ -30,5 +30,6 @@ public class AMRunner {
         System.out.println(manipulator.howLongLastWord());
         System.out.println(manipulator.updateWordsListAt(5, "valid"));
         System.out.println(manipulator.howLongLastWord());
+
     }
 }
