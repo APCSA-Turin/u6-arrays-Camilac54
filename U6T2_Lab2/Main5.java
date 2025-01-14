@@ -1,6 +1,6 @@
 package U6T2_Lab2;
 
-public class Main {
+public class Main5 {
     public static void main(String[] args) {
         int[] nums = {6, 1, 3, 4, 7, 5};
         int[] even = {1, 2, 3, 4, 5, 6};
