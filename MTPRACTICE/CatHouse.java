@@ -41,7 +41,22 @@ public class CatHouse {
     }
     
 
-    //public boolean performVaccinations() {
-        // COPY/PASTE YOUR SOLUTION HERE
-   // }
+    public boolean performVaccinations() {
+        boolean performed =  false;
+        if (hasVaccinesInStock() == true) {
+            if (cat1.isVaccinated() == false) {
+                cat1.vaccinate();
+                totalVaccinesAdministered ++;
+                performed = true;
+            }
+    
+            if (cat1.isVaccinated() == false) {
+                cat1.vaccinate();
+                totalVaccinesAdministered ++;
+                performed = true;
+            }
+        }	
+        return performed;
+            
+    }
 }
